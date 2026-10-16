@@ -6,6 +6,8 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private float _velocidadMovimiento = 5f;
     [SerializeField] private Rigidbody2D _cuerpoRigido2D;
     [SerializeField] private float _force = 10f;
+    public DetectorSuelo detectorSuelo;
+    public Rigidbody2D rb;
 
     private bool _puedeSaltar = true;
 
@@ -28,12 +30,14 @@ public class MovimientoJugador : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W) && _puedeSaltar)
         {
-            _cuerpoRigido2D.AddForce(
-                Vector2.up * _fuerzaSalto,
-                ForceMode2D.Impulse
-            );
+            _cuerpoRigido2D.AddForce(Vector2.up * _fuerzaSalto, ForceMode2D.Impulse);
 
             _puedeSaltar = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && detectorSuelo.estaEnSuelo)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, _force);
         }
     }
 
