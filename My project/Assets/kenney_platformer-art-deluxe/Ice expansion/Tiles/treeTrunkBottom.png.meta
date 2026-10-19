@@ -129,12 +129,12 @@ TextureImporter:
       name: treeTrunkBottom_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 59
+        width: 70
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4839f2e4ebb2fe34d87d7531b81b877b
     internalID: 0
     vertices: []
     indices: 
