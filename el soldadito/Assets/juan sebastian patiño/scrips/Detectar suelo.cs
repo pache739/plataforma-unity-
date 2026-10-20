@@ -1,8 +1,12 @@
 using UnityEngine;
 
 public class DetectorSuelo : MonoBehaviour
+
 {
+    [SerializeField] private MovimientoJugador _personaje;
     public bool estaEnSuelo;
+    private bool _puedeSaltar = true;
+
 
     private void OnTriggerStay2D(Collider2D colision)
     {
@@ -21,5 +25,11 @@ public class DetectorSuelo : MonoBehaviour
             Debug.Log("Estoy saltando");
         }
     }
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Suelo"))
+        {
+            _puedeSaltar = true;
+        }
+    }
 }
