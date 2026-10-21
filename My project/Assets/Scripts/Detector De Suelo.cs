@@ -6,13 +6,17 @@ public class DetectorSuelo : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D colision)
     {
-        estaEnSuelo = true;
-        Debug.Log("Tocó el suelo");
+        if (colision.CompareTag("Suelo"))
+        {
+            estaEnSuelo = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D colision)
     {
-        estaEnSuelo = false;
-        Debug.Log("Estoy saltando");
+        if (colision.CompareTag("Suelo"))
+        {
+            estaEnSuelo = false;
+        }
     }
 }

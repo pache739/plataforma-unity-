@@ -7,6 +7,7 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private float _velocidadMaxima = 5f;
     [SerializeField] private Rigidbody2D _cuerpoRigido2D;
     [SerializeField] public DetectorSuelo detectorSuelo;
+    [SerializeField] private float _multiplicadorCaida = 3f;
 
     private Animator _animador;
     private bool _quiereSaltar;
@@ -44,11 +45,26 @@ public class MovimientoJugador : MonoBehaviour
             _cuerpoRigido2D.AddForce(Vector2.left * _force);
         }
 
+       // Frenar al soltar A y D (solo en el suelo)
+       if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D) && detectorSuelo.estaEnSuelo)
+    {
+           _cuerpoRigido2D.linearVelocity = new Vector2(0, _cuerpoRigido2D.linearVelocity.y);
+    }
+
         // Salto
         if (_quiereSaltar)
+    {
+        if (detectorSuelo.estaEnSuelo)
+    {
+        _cuerpoRigido2D.AddForce(Vector2.up * _fuerzaSalto, ForceMode2D.Impulse);
+    }
+        _quiereSaltar = false;
+}
+
+        if (_cuerpoRigido2D.linearVelocity.y < 0)
+        
         {
-            _cuerpoRigido2D.AddForce(Vector2.up * _fuerzaSalto, ForceMode2D.Impulse);
-            _quiereSaltar = false;
+            _cuerpoRigido2D.linearVelocity += Vector2.up * Physics2D.gravity.y * (_multiplicadorCaida - 1f) * Time.fixedDeltaTime;
         }
 
         // Limitar la velocidad horizontal
