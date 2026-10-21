@@ -4522,7 +4522,7 @@ Transform:
   m_GameObject: {fileID: 578959806}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.863286, y: 2.8887613, z: -5}
+  m_LocalPosition: {x: -6.844585, y: 2.8887613, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4893,9 +4893,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 2
+  m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 3.5
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4994,9 +4994,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dd0cf97cfca35848b76fdd764dacd0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovimientoJugador
-  _fuerzaSalto: 20
-  _force: 3
-  _velocidadMaxima: 1
+  _fuerzaSalto: 10
+  _force: 15
+  _velocidadMaxima: 10
   _cuerpoRigido2D: {fileID: 1008828055}
   detectorSuelo: {fileID: 729019491}
 --- !u!95 &1008828059
@@ -5200,7 +5200,7 @@ Transform:
   m_GameObject: {fileID: 1792840133}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.863286, y: 2.8887613, z: -5}
+  m_LocalPosition: {x: -6.844585, y: 2.8887613, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
