@@ -2,13 +2,12 @@
 
 public class MovimientoJugador : MonoBehaviour
 {
-    [SerializeField] private float _fuerzaSalto = 5f;
     [SerializeField] private float _velocidadMovimiento = 5f;
     [SerializeField] private Rigidbody2D _cuerpoRigido2D;
     [SerializeField] private float _force = 10f;
-    private Animator _animador;
+    [SerializeField] private DetectorSuelo _detectorSuelo;
 
-    private bool _puedeSaltar = true;
+    private Animator _animador;
 
     private void Awake()
     {
@@ -18,12 +17,12 @@ public class MovimientoJugador : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.D)) //derecha
+        if (Input.GetKey(KeyCode.D))
         {
             _cuerpoRigido2D.AddForce(Vector2.right * _force);
         }
 
-        if (Input.GetKey(KeyCode.A)) //izquierda
+        if (Input.GetKey(KeyCode.A))
         {
             _cuerpoRigido2D.AddForce(Vector2.left * _force);
         }
@@ -31,15 +30,20 @@ public class MovimientoJugador : MonoBehaviour
         bool caminando = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D);
         _animador.SetBool("caminando", caminando);
 
-        if (Input.GetKeyDown(KeyCode.W) && _puedeSaltar) //arriba
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            _cuerpoRigido2D.AddForce(Vector2.up * _fuerzaSalto, ForceMode2D.Impulse);
+            Debug.Log("PRESIONÉ W");
+            Debug.Log("¿Estoy en el suelo?: " + _detectorSuelo.estaEnSuelo);
 
-            _puedeSaltar = false;
+            if (_detectorSuelo.estaEnSuelo)
+            {
+                Debug.Log("VOY A SALTAR");
+
+                _cuerpoRigido2D.AddForce(
+                    Vector2.up * _force,
+                    ForceMode2D.Impulse
+                );
+            }
         }
-
     }
-
-
 }
-
