@@ -3,20 +3,21 @@ using UnityEngine;
 public class DetectorSuelo : MonoBehaviour
 {
     public bool estaEnSuelo;
+    [SerializeField] private float _radio = 0.15f;
 
-    private void OnTriggerStay2D(Collider2D colision)
+    private void FixedUpdate()
     {
-        if (colision.CompareTag("Suelo"))
-        {
-            estaEnSuelo = true;
-        }
-    }
+        estaEnSuelo = false;
 
-    private void OnTriggerExit2D(Collider2D colision)
-    {
-        if (colision.CompareTag("Suelo"))
+        Collider2D[] colisiones = Physics2D.OverlapCircleAll(transform.position, _radio);
+        foreach (Collider2D colision in colisiones)
         {
-            estaEnSuelo = false;
+            if (colision.CompareTag("Suelo"))
+            {
+                estaEnSuelo = true;
+                Debug.Log("Toca: " + colision.name);
+                break;
+            }
         }
     }
 }
