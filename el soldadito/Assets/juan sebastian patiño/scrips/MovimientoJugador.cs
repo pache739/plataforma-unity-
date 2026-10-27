@@ -19,12 +19,12 @@ public class MovimientoJugador : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))
         {
-            _cuerpoRigido2D.AddForce(Vector2.right * _force);
+            _cuerpoRigido2D.AddForce(Vector2.right * _velocidadMovimiento);
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            _cuerpoRigido2D.AddForce(Vector2.left * _force);
+            _cuerpoRigido2D.AddForce(Vector2.left * _velocidadMovimiento);
         }
 
         bool caminando = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D);
