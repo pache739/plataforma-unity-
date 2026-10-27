@@ -7,9 +7,10 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private Image _barraVida;
     [SerializeField] private GameObject _panelPerdiste;
 
-    private int _puntosVidaActuales;
+    [SerializeField] private int _puntosVidaActuales;
 
     private void Start()
+    
     {
         _puntosVidaActuales = _puntosVidaMaximo;
         ActualizarBarra();

@@ -8865,6 +8865,7 @@ MonoBehaviour:
   _puntosVidaMaximo: 100
   _barraVida: {fileID: 0}
   _panelPerdiste: {fileID: 0}
+  _puntosVidaActuales: 0
 --- !u!1 &1143784998
 GameObject:
   m_ObjectHideFlags: 0
@@ -8877,6 +8878,7 @@ GameObject:
   - component: {fileID: 1143785001}
   - component: {fileID: 1143785000}
   - component: {fileID: 1143785002}
+  - component: {fileID: 1143785003}
   m_Layer: 0
   m_Name: Pinchos Quita Vida
   m_TagString: Untagged
@@ -9071,8 +9073,8 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!61 &1143785002
-BoxCollider2D:
+--- !u!19719996 &1143785002
+TilemapCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9105,18 +9107,24 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 1.5, y: -2.5}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 27, y: 7}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
+--- !u!114 &1143785003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143784998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da24a43d3605ab4ab394b4ace12b4ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PinchosQuitaVida
+  "_da\xF1o": 10
+  _tiempoEntreGolpes: 1
 --- !u!1 &1201071787
 GameObject:
   m_ObjectHideFlags: 0
