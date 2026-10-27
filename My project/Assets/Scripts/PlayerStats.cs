@@ -4,20 +4,27 @@ using UnityEngine.UI;
 public class PlayerStats : MonoBehaviour
 {
     [SerializeField] private int _puntosVidaMaximo = 100;
+    [SerializeField] private int _puntosVidaActuales;
+    [SerializeField] private int _escudoMaximo = 50;
+    [SerializeField] private int _escudoActual;
     [SerializeField] private Image _barraVida;
+    [SerializeField] private Image _barraEscudo;
     [SerializeField] private GameObject _panelPerdiste;
 
-    [SerializeField] private int _puntosVidaActuales;
-
     private void Start()
-    
     {
         _puntosVidaActuales = _puntosVidaMaximo;
+        _escudoActual = _escudoMaximo;
         ActualizarBarra();
     }
 
     public void RestarVida(int dano)
     {
+        // El escudo absorbe el daño primero
+        int absorbido = Mathf.Min(_escudoActual, dano);
+        _escudoActual -= absorbido;
+        dano -= absorbido;
+
         _puntosVidaActuales = Mathf.Max(_puntosVidaActuales - dano, 0);
         ActualizarBarra();
 
@@ -33,9 +40,20 @@ public class PlayerStats : MonoBehaviour
         ActualizarBarra();
     }
 
+    public void RestaurarEscudo(int cantidad)
+    {
+        _escudoActual = Mathf.Min(_escudoActual + cantidad, _escudoMaximo);
+        ActualizarBarra();
+    }
+
     private void ActualizarBarra()
     {
-        Debug.Log("Vida: " + _puntosVidaActuales);
+        Debug.Log("Vida: " + _puntosVidaActuales + " | Escudo: " + _escudoActual);
+
+        if (_barraEscudo != null)
+        {
+            _barraEscudo.fillAmount = (float)_escudoActual / _escudoMaximo;
+        }
 
         if (_barraVida == null)
         {
