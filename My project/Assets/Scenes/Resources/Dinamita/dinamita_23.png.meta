@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 42218653204fd0f4bbd8a892ee53145e
+guid: 8169bef664ea6fd45adcaf36e5d9dd57
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -11473527768740948
-    second: Cigarrillo enrollado en pixel art_0
+      213: 1387806118838831495
+    second: dinamita_23_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cigarrillo enrollado en pixel art_0
+      name: dinamita_23_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1254
-        height: 1254
+        x: 19
+        y: 19
+        width: 492
+        height: 852
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cab060523ec37dff0800000000000000
-      internalID: -11473527768740948
+      spriteID: 789808aef4a724310800000000000000
+      internalID: 1387806118838831495
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cigarrillo enrollado en pixel art_0: -11473527768740948
+      dinamita_23_0: 1387806118838831495
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

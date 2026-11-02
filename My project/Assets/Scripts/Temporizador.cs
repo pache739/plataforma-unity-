@@ -1,20 +1,25 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Events;
-using TMPro;
 
 public class Temporizador : MonoBehaviour
 {
     [SerializeField] private float _tiempoTotal = 60f;
-    [SerializeField] private TextMeshProUGUI _texto;
+    [SerializeField] private bool _repetir = true;
+    [SerializeField] private Image _imagenReloj;
     [SerializeField] private UnityEvent _alTerminar;
 
+    private Sprite[] _cuadros;
     private float _tiempoRestante;
     private bool _terminado;
 
     private void Start()
     {
+        _cuadros = Resources.LoadAll<Sprite>("Dinamita");
+        System.Array.Sort(_cuadros, (a, b) => string.Compare(a.name, b.name));
+
         _tiempoRestante = _tiempoTotal;
-        ActualizarTexto();
+        ActualizarImagen();
     }
 
     private void Update()
@@ -28,27 +33,33 @@ public class Temporizador : MonoBehaviour
 
         if (_tiempoRestante <= 0f)
         {
-            _tiempoRestante = 0f;
-            _terminado = true;
-            ActualizarTexto();
             Debug.Log("Se acabó el tiempo");
             _alTerminar.Invoke();
-            return;
+
+            if (_repetir)
+            {
+                _tiempoRestante = _tiempoTotal;
+            }
+            else
+            {
+                _tiempoRestante = 0f;
+                _terminado = true;
+            }
         }
 
-        ActualizarTexto();
+        ActualizarImagen();
     }
 
-    private void ActualizarTexto()
+    private void ActualizarImagen()
     {
-        if (_texto == null)
+        if (_imagenReloj == null || _cuadros.Length == 0)
         {
             return;
         }
 
-        int total = Mathf.CeilToInt(_tiempoRestante);
-        int minutos = total / 60;
-        int segundos = total % 60;
-        _texto.text = minutos.ToString("00") + ":" + segundos.ToString("00");
+        float transcurrido = _tiempoTotal - _tiempoRestante;
+        int indice = Mathf.FloorToInt(transcurrido / _tiempoTotal * _cuadros.Length);
+        indice = Mathf.Clamp(indice, 0, _cuadros.Length - 1);
+        _imagenReloj.sprite = _cuadros[indice];
     }
 }

@@ -8,6 +8,7 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private Rigidbody2D _cuerpoRigido2D;
     [SerializeField] public DetectorSuelo detectorSuelo;
     [SerializeField] private float _multiplicadorCaida = 3f;
+    [SerializeField] private float _multiplicadorSaltoCorto = 2f;
 
     private Animator _animador;
     private bool _quiereSaltar;
@@ -30,45 +31,49 @@ public class MovimientoJugador : MonoBehaviour
         bool caminando = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D);
         _animador.SetBool("caminando", caminando);
     }
-
-    private void FixedUpdate()
+private void FixedUpdate()
+{
+    // Derecha
+    if (Input.GetKey(KeyCode.D))
     {
-        // Derecha
-        if (Input.GetKey(KeyCode.D))
-        {
-            _cuerpoRigido2D.AddForce(Vector2.right * _force);
-        }
-
-        // Izquierda
-        if (Input.GetKey(KeyCode.A))
-        {
-            _cuerpoRigido2D.AddForce(Vector2.left * _force);
-        }
-
-       // Frenar al soltar A y D (solo en el suelo)
-       if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D) && detectorSuelo.estaEnSuelo)
-    {
-           _cuerpoRigido2D.linearVelocity = new Vector2(0, _cuerpoRigido2D.linearVelocity.y);
+        _cuerpoRigido2D.AddForce(Vector2.right * _force);
     }
 
-        // Salto
-        if (_quiereSaltar)
+    // Izquierda
+    if (Input.GetKey(KeyCode.A))
+    {
+        _cuerpoRigido2D.AddForce(Vector2.left * _force);
+    }
+
+    // Frenar al soltar A y D (solo en el suelo)
+    if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D) && detectorSuelo.estaEnSuelo)
+    {
+        _cuerpoRigido2D.linearVelocity = new Vector2(0, _cuerpoRigido2D.linearVelocity.y);
+    }
+
+    // Salto
+    if (_quiereSaltar)
     {
         if (detectorSuelo.estaEnSuelo)
-    {
-        _cuerpoRigido2D.AddForce(Vector2.up * _fuerzaSalto, ForceMode2D.Impulse);
-    }
-        _quiereSaltar = false;
-}
-
-        if (_cuerpoRigido2D.linearVelocity.y < 0)
-        
         {
-            _cuerpoRigido2D.linearVelocity += Vector2.up * Physics2D.gravity.y * (_multiplicadorCaida - 1f) * Time.fixedDeltaTime;
+            _cuerpoRigido2D.AddForce(Vector2.up * _fuerzaSalto, ForceMode2D.Impulse);
         }
 
-        // Limitar la velocidad horizontal
-        float velocidadX = Mathf.Clamp(_cuerpoRigido2D.linearVelocity.x, -_velocidadMaxima, _velocidadMaxima);
-        _cuerpoRigido2D.linearVelocity = new Vector2(velocidadX, _cuerpoRigido2D.linearVelocity.y);
+        _quiereSaltar = false;
     }
+
+    // Caída más rápida, y salto corto si se suelta W
+    if (_cuerpoRigido2D.linearVelocity.y < 0)
+    {
+        _cuerpoRigido2D.linearVelocity += Vector2.up * Physics2D.gravity.y * (_multiplicadorCaida - 1f) * Time.fixedDeltaTime;
+    }
+    else if (_cuerpoRigido2D.linearVelocity.y > 0 && !Input.GetKey(KeyCode.W))
+    {
+        _cuerpoRigido2D.linearVelocity += Vector2.up * Physics2D.gravity.y * (_multiplicadorSaltoCorto - 1f) * Time.fixedDeltaTime;
+    }
+
+    // Limitar la velocidad horizontal
+    float velocidadX = Mathf.Clamp(_cuerpoRigido2D.linearVelocity.x, -_velocidadMaxima, _velocidadMaxima);
+    _cuerpoRigido2D.linearVelocity = new Vector2(velocidadX, _cuerpoRigido2D.linearVelocity.y);
+}
 }
