@@ -3,17 +3,23 @@ using UnityEngine.Events;
 
 public class PowerUpCuracion : MonoBehaviour
 {
-    [SerializeField] private UnityEvent _alCurar;
+    [SerializeField] private UnityEvent<int> _alCurar;
+
+    [SerializeField] private int _cantidad = 25;
 
     private void OnTriggerEnter2D(Collider2D colision)
     {
-        if (colision.GetComponentInParent<MovimientoJugador>() == null)
+        PlayerStats stats = colision.GetComponentInParent<PlayerStats>();
+
+        if (stats == null)
         {
             return;
         }
 
-        Debug.Log("Four Loko recogida");
-        _alCurar.Invoke();
+        stats.SumarVida(_cantidad);
+
+        Debug.Log("Curación recogida");
+
         Destroy(gameObject);
     }
 }

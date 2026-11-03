@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 
 public class MovimientoJugador : MonoBehaviour
 {
@@ -6,8 +7,8 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private Rigidbody2D _cuerpoRigido2D;
     [SerializeField] private float _force = 10f;
     [SerializeField] private DetectorSuelo _detectorSuelo;
-    [SerializeField] private SpriteRenderer _reflect;
 
+    private SpriteRenderer _reflect;
     private Animator _animador;
     private float _movimientoHorizontal;
     private bool _saltar;
@@ -16,6 +17,7 @@ public class MovimientoJugador : MonoBehaviour
     {
         _cuerpoRigido2D = GetComponent<Rigidbody2D>();
         _animador = GetComponent<Animator>();
+        _reflect = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -23,10 +25,16 @@ public class MovimientoJugador : MonoBehaviour
         _movimientoHorizontal = 0f;
 
         if (Input.GetKey(KeyCode.D))
+        {
             _movimientoHorizontal = 1f;
+            _reflect.flipX = false;
+        }
 
         if (Input.GetKey(KeyCode.A))
+        {
             _movimientoHorizontal = -1f;
+            _reflect.flipX = true;
+        }
 
         bool caminando = _movimientoHorizontal != 0f;
         _animador.SetBool("caminando", caminando);

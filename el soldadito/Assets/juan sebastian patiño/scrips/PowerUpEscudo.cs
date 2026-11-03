@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class PowerUpEscudo : MonoBehaviour
@@ -6,14 +7,15 @@ public class PowerUpEscudo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D colision)
     {
-        PlayerStats stats = colision.GetComponentInParent<PlayerStats>();
+        EscudoJugador escudo = colision.GetComponentInParent<EscudoJugador>();
 
-        if (stats == null)
+        if (escudo == null)
         {
             return;
         }
 
-        stats.RestaurarEscudo(_cantidad);
+        escudo.RestaurarEscudo(_cantidad);
+
         Destroy(gameObject);
     }
 }

@@ -1,28 +1,13 @@
-using UnityEngine.UI;
+
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private Image barradevida;
 
-    public void SumarFillAmount(float amount)
+    public void ActualizarBarraVida(float vida)
     {
-        barradevida.fillAmount += amount;
+        barradevida.fillAmount = vida;
     }
-
-    public void RestarFillAmount(float amount)
-    {
-        barradevida.fillAmount = barradevida.fillAmount - amount;
-    }
-
-    public void RestartFillAmout(float amount)
-    {
-        barradevida.fillAmount = barradevida.fillAmount - amount;
-    }
-
-    public void colorBarra(Color myColor)
-    {
-        barradevida.color = myColor;
-    }
-
 }

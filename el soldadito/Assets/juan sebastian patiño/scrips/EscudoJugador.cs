@@ -1,38 +1,52 @@
-
 using UnityEngine;
 
 public class EscudoJugador : MonoBehaviour
 {
-    private int escudoMaximo = 50;
-    private int escudoActual;
+    [SerializeField] private int _escudoMaximo = 50;
+    [SerializeField] private int _escudoActual;
+    [SerializeField] private UIManagerEscudo _uiManagerEscudo;
 
     private void Start()
     {
-        escudoActual = escudoMaximo;
+        _escudoActual = _escudoMaximo;
+        ActualizarBarraEscudo();
     }
 
     public int AbsorberDano(int dano)
     {
-        int danoAbsorbido = Mathf.Min(escudoActual, dano);
+        int absorbido = Mathf.Min(_escudoActual, dano);
 
-        escudoActual -= danoAbsorbido;
+        _escudoActual -= absorbido;
+        dano -= absorbido;
 
-        dano -= danoAbsorbido;
+        ActualizarBarraEscudo();
 
-        Debug.Log("Escudo: " + escudoActual);
+        Debug.Log("Escudo: " + _escudoActual);
 
         return dano;
     }
 
     public void RestaurarEscudo(int cantidad)
     {
-        escudoActual += cantidad;
+        _escudoActual += cantidad;
 
-        if (escudoActual > escudoMaximo)
+        if (_escudoActual > _escudoMaximo)
         {
-            escudoActual = escudoMaximo;
+            _escudoActual = _escudoMaximo;
         }
 
-        Debug.Log("Escudo: " + escudoActual);
+        ActualizarBarraEscudo();
+
+        Debug.Log("Escudo: " + _escudoActual);
+    }
+
+    private void ActualizarBarraEscudo()
+    {
+        if (_uiManagerEscudo != null && _escudoMaximo > 0)
+        {
+            _uiManagerEscudo.ActualizarBarraEscudo(
+                (float)_escudoActual / _escudoMaximo
+            );
+        }
     }
 }

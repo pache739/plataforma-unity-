@@ -1,46 +1,70 @@
-
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    private int vidaMaxima = 100;
-    private int vidaActual;
+    [SerializeField] private int _vidaMaxima = 100;
+    [SerializeField] private int _vidaActual;
+    [SerializeField] private UIManager _uiManager;
 
-    public EscudoJugador escudo;
+    private EscudoJugador _escudo;
 
     private void Start()
     {
-        vidaActual = vidaMaxima;
+        _vidaActual = _vidaMaxima;
+        _escudo = GetComponent<EscudoJugador>();
+
+        ActualizarVida();
     }
 
     public void RestarVida(int dano)
     {
-        dano = escudo.AbsorberDano(dano);
-
-        vidaActual -= dano;
-
-        if (vidaActual < 0)
+        if (_escudo != null)
         {
-            vidaActual = 0;
+            dano = _escudo.AbsorberDano(dano);
         }
 
-        Debug.Log("Vida: " + vidaActual);
+        _vidaActual -= dano;
 
-        if (vidaActual == 0)
+        if (_vidaActual < 0)
         {
-            Debug.Log("El jugador ha muerto");
+            _vidaActual = 0;
+        }
+
+        ActualizarVida();
+
+        Debug.Log("Vida: " + _vidaActual);
+
+        if (_vidaActual == 0)
+        {
+            Morir();
         }
     }
 
     public void SumarVida(int cura)
     {
-        vidaActual += cura;
+        _vidaActual += cura;
 
-        if (vidaActual > vidaMaxima)
+        if (_vidaActual > _vidaMaxima)
         {
-            vidaActual = vidaMaxima;
+            _vidaActual = _vidaMaxima;
         }
 
-        Debug.Log("Vida: " + vidaActual);
+        ActualizarVida();
+    }
+
+    private void ActualizarVida()
+    {
+        if (_uiManager != null)
+        {
+            _uiManager.ActualizarBarraVida(
+                (float)_vidaActual / _vidaMaxima
+            );
+        }
+    }
+
+    public void Morir()
+    {
+        Debug.Log("El jugador ha muerto");
+        Destroy(gameObject);
     }
 }
