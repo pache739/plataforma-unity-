@@ -1,88 +1,46 @@
+
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
-    [SerializeField] private int _puntosVidaMaximo = 100;
-    [SerializeField] private int _puntosVidaActuales;
-    [SerializeField] private int _escudoMaximo = 50;
-    [SerializeField] private int _escudoActual;
-    [SerializeField] private Image _barraVida;
-    [SerializeField] private Image _barraEscudo;
-    [SerializeField] private GameObject _panelPerdiste;
+    private int vidaMaxima = 100;
+    private int vidaActual;
+
+    public EscudoJugador escudo;
 
     private void Start()
     {
-        _puntosVidaActuales = _puntosVidaMaximo;
-        _escudoActual = _escudoMaximo;
-        ActualizarBarra();
+        vidaActual = vidaMaxima;
     }
 
     public void RestarVida(int dano)
     {
-        // El escudo absorbe el daño primero
-        int absorbido = Mathf.Min(_escudoActual, dano);
-        _escudoActual -= absorbido;
-        dano -= absorbido;
+        dano = escudo.AbsorberDano(dano);
 
-        _puntosVidaActuales = Mathf.Max(_puntosVidaActuales - dano, 0);
-        ActualizarBarra();
+        vidaActual -= dano;
 
-        if (_puntosVidaActuales <= 0)
+        if (vidaActual < 0)
         {
-            Morir();
+            vidaActual = 0;
+        }
+
+        Debug.Log("Vida: " + vidaActual);
+
+        if (vidaActual == 0)
+        {
+            Debug.Log("El jugador ha muerto");
         }
     }
 
     public void SumarVida(int cura)
     {
-        _puntosVidaActuales = Mathf.Min(_puntosVidaActuales + cura, _puntosVidaMaximo);
-        ActualizarBarra();
-    }
+        vidaActual += cura;
 
-    public void RestaurarEscudo(int cantidad)
-    {
-        _escudoActual = Mathf.Min(_escudoActual + cantidad, _escudoMaximo);
-        ActualizarBarra();
-    }
-
-    private void ActualizarBarra()
-    {
-        Debug.Log("Vida: " + _puntosVidaActuales + " | Escudo: " + _escudoActual);
-
-        if (_barraEscudo != null)
+        if (vidaActual > vidaMaxima)
         {
-            _barraEscudo.fillAmount = (float)_escudoActual / _escudoMaximo;
+            vidaActual = vidaMaxima;
         }
 
-        if (_barraVida == null)
-        {
-            return;
-        }
-
-        _barraVida.fillAmount = (float)_puntosVidaActuales / _puntosVidaMaximo;
-
-        if (_puntosVidaActuales >= 80)
-        {
-            _barraVida.color = new Color(68f / 255f, 189f / 255f, 68f / 255f, 1f);
-        }
-        else if (_puntosVidaActuales >= 40)
-        {
-            _barraVida.color = new Color(245f / 255f, 73f / 255f, 39f / 255f, 1f);
-        }
-        else
-        {
-            _barraVida.color = new Color(212f / 255f, 19f / 255f, 19f / 255f, 1f);
-        }
-    }
-
-    private void Morir()
-    {
-        if (_panelPerdiste != null)
-        {
-            _panelPerdiste.SetActive(true);
-        }
-
-        Destroy(gameObject);
+        Debug.Log("Vida: " + vidaActual);
     }
 }
