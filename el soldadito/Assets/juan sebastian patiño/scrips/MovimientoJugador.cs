@@ -41,8 +41,7 @@ public class MovimientoJugador : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W))
         {
-            Debug.Log("PRESIONÉ W");
-            Debug.Log("¿Estoy en el suelo?: " + _detectorSuelo.estaEnSuelo);
+
 
             if (_detectorSuelo.estaEnSuelo)
                 _saltar = true;

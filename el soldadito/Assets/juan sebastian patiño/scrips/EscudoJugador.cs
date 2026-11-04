@@ -37,7 +37,7 @@ public class EscudoJugador : MonoBehaviour
 
         ActualizarBarraEscudo();
 
-        Debug.Log("Escudo: " + _escudoActual);
+        
     }
 
     private void ActualizarBarraEscudo()

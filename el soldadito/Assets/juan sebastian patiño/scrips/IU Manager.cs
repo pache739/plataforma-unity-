@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private Image barradevida;
+    [SerializeField] private GameObject panelPerdiste;
 
     public void ActualizarBarraVida(float vida)
     {
@@ -21,5 +22,10 @@ public class UIManager : MonoBehaviour
         {
             barradevida.color = Color.red;
         }
+    }
+
+    public void MostrarPanelPerdiste()
+    {
+        panelPerdiste.SetActive(true);
     }
 }

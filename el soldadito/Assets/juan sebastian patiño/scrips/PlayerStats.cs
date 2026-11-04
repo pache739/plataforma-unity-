@@ -7,6 +7,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private UIManager _uiManager;
 
     private EscudoJugador _escudo;
+    private bool _muerto;
 
     private void Start()
     {
@@ -18,21 +19,17 @@ public class PlayerStats : MonoBehaviour
 
     public void RestarVida(int dano)
     {
+        if (_muerto) return;
+
         if (_escudo != null)
         {
             dano = _escudo.AbsorberDano(dano);
         }
 
         _vidaActual -= dano;
-
-        if (_vidaActual < 0)
-        {
-            _vidaActual = 0;
-        }
+        _vidaActual = Mathf.Max(0, _vidaActual);
 
         ActualizarVida();
-
-        Debug.Log("Vida: " + _vidaActual);
 
         if (_vidaActual == 0)
         {
@@ -42,12 +39,10 @@ public class PlayerStats : MonoBehaviour
 
     public void SumarVida(int cura)
     {
-        _vidaActual += cura;
+        if (_muerto) return;
 
-        if (_vidaActual > _vidaMaxima)
-        {
-            _vidaActual = _vidaMaxima;
-        }
+        _vidaActual += cura;
+        _vidaActual = Mathf.Min(_vidaActual, _vidaMaxima);
 
         ActualizarVida();
     }
@@ -64,7 +59,17 @@ public class PlayerStats : MonoBehaviour
 
     public void Morir()
     {
+        if (_muerto) return;
+
+        _muerto = true;
+
         Debug.Log("El jugador ha muerto");
+
+        if (_uiManager != null)
+        {
+            _uiManager.MostrarPanelPerdiste();
+        }
+
         Destroy(gameObject);
     }
 }
