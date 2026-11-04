@@ -62,17 +62,17 @@ public class PlayerStats : MonoBehaviour
 
         _barraVida.fillAmount = (float)_puntosVidaActuales / _puntosVidaMaximo;
 
-        if (_puntosVidaActuales >= 80)
+        if (_puntosVidaActuales > 70)
         {
-            _barraVida.color = new Color(68f / 255f, 189f / 255f, 68f / 255f, 1f);
+           _barraVida.color = new Color(68f / 255f, 189f / 255f, 68f / 255f, 1f);
         }
-        else if (_puntosVidaActuales >= 40)
+        else if (_puntosVidaActuales > 40)
         {
-            _barraVida.color = new Color(245f / 255f, 73f / 255f, 39f / 255f, 1f);
+           _barraVida.color = new Color(245f / 255f, 73f / 255f, 39f / 255f, 1f);
         }
         else
         {
-            _barraVida.color = new Color(212f / 255f, 19f / 255f, 19f / 255f, 1f);
+           _barraVida.color = new Color(212f / 255f, 19f / 255f, 19f / 255f, 1f);
         }
     }
 
