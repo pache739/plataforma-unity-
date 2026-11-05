@@ -7,10 +7,13 @@ public class Puerta : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D colision)
     {
+        Debug.Log("Algo tocó la puerta: " + colision.name);
+
         InventarioMonedas inventario = colision.GetComponentInParent<InventarioMonedas>();
 
         if (inventario == null)
         {
+            Debug.Log("Pero no tiene InventarioMonedas");
             return;
         }
 
@@ -22,11 +25,13 @@ public class Puerta : MonoBehaviour
 
         Debug.Log("¡Ganaste!");
 
-        if (_panelVictoria != null)
+        if (_panelVictoria == null)
         {
-            _panelVictoria.SetActive(true);
+            Debug.Log("El campo Panel Victoria está vacío");
+            return;
         }
 
+        _panelVictoria.SetActive(true);
         Time.timeScale = 0f;
     }
 }
