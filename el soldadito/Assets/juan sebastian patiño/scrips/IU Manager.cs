@@ -1,13 +1,25 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
+    [Header("Barra de vida")]
     [SerializeField] private Image barradevida;
+
+    [Header("Panel de derrota")]
     [SerializeField] private GameObject panelPerdiste;
+
+    [Header("Monedas")]
+    [SerializeField] private TextMeshProUGUI _textoMonedas;
 
     public void ActualizarBarraVida(float vida)
     {
+        if (barradevida == null)
+        {
+            return;
+        }
+
         barradevida.fillAmount = vida;
 
         if (vida > 0.6f)
@@ -26,6 +38,17 @@ public class UIManager : MonoBehaviour
 
     public void MostrarPanelPerdiste()
     {
-        panelPerdiste.SetActive(true);
+        if (panelPerdiste != null)
+        {
+            panelPerdiste.SetActive(true);
+        }
+    }
+
+    public void ActualizarMonedas(int cantidad)
+    {
+        if (_textoMonedas != null)
+        {
+            _textoMonedas.text = "X" + cantidad;
+        }
     }
 }
