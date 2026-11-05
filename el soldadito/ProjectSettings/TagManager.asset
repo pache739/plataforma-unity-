@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 3
   tags:
+<<<<<<<< HEAD:el soldadito/ProjectSettings/TagManager.asset
   - suelo
+========
+>>>>>>>> Samuel-Urueña:My project/ProjectSettings/TagManager.asset
   - Suelo
   layers:
   - Default

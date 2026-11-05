@@ -212,6 +212,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 17, y: -19, z: 0}
     second:
       serializedVersion: 2
@@ -222,6 +223,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Samuel-Urueña
   - first: {x: -1, y: -18, z: 0}
     second:
       serializedVersion: 2
@@ -1122,6 +1125,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: -4, y: -13, z: 0}
     second:
       serializedVersion: 2
@@ -1132,6 +1136,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Samuel-Urueña
   - first: {x: -1, y: -13, z: 0}
     second:
       serializedVersion: 2
@@ -1312,6 +1318,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: -3, y: -12, z: 0}
     second:
       serializedVersion: 2
@@ -1322,6 +1329,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Samuel-Urueña
   - first: {x: -1, y: -12, z: 0}
     second:
       serializedVersion: 2
@@ -1862,6 +1871,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 21, y: -10, z: 0}
     second:
       serializedVersion: 2
@@ -1952,6 +1962,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Samuel-Urueña
   - first: {x: -1, y: -9, z: 0}
     second:
       serializedVersion: 2
@@ -2132,6 +2144,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 21, y: -9, z: 0}
     second:
       serializedVersion: 2
@@ -2232,6 +2245,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Samuel-Urueña
   - first: {x: -1, y: -8, z: 0}
     second:
       serializedVersion: 2
@@ -2412,6 +2427,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 21, y: -8, z: 0}
     second:
       serializedVersion: 2
@@ -2512,6 +2528,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Samuel-Urueña
   - first: {x: -1, y: -7, z: 0}
     second:
       serializedVersion: 2
@@ -2692,6 +2710,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 21, y: -7, z: 0}
     second:
       serializedVersion: 2
@@ -2792,6 +2811,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Samuel-Urueña
   - first: {x: -1, y: -6, z: 0}
     second:
       serializedVersion: 2
@@ -2972,6 +2993,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 21, y: -6, z: 0}
     second:
       serializedVersion: 2
@@ -3072,6 +3094,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Samuel-Urueña
   - first: {x: -1, y: -5, z: 0}
     second:
       serializedVersion: 2
@@ -3252,6 +3276,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 21, y: -5, z: 0}
     second:
       serializedVersion: 2
@@ -3352,6 +3377,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Samuel-Urueña
   - first: {x: -1, y: -4, z: 0}
     second:
       serializedVersion: 2
@@ -3532,6 +3559,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 21, y: -4, z: 0}
     second:
       serializedVersion: 2
@@ -3642,6 +3670,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Samuel-Urueña
   - first: {x: -1, y: -3, z: 0}
     second:
       serializedVersion: 2
@@ -3822,6 +3852,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 21, y: -3, z: 0}
     second:
       serializedVersion: 2
@@ -3922,6 +3953,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Samuel-Urueña
   - first: {x: -1, y: -2, z: 0}
     second:
       serializedVersion: 2
@@ -4102,6 +4135,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 21, y: -2, z: 0}
     second:
       serializedVersion: 2
@@ -4202,6 +4236,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Samuel-Urueña
   - first: {x: -1, y: -1, z: 0}
     second:
       serializedVersion: 2
@@ -4382,6 +4418,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 21, y: -1, z: 0}
     second:
       serializedVersion: 2
@@ -4482,6 +4519,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Samuel-Urueña
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
@@ -5164,6 +5203,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 65b850048dbef5043adcbf078dd99009, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: ed9e87ae9f029fc48849154f207a62d1, type: 2}
+<<<<<<< HEAD
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 9bdee31b8d7c9294789a8396d566702d, type: 2}
   - m_RefCount: 2
@@ -5364,6 +5404,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 0990517a663c7a34a87d91c60c609cb8, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: b5938944d866c2b49b169fb0fe41e1b7, type: 2}
+=======
+>>>>>>> Samuel-Urueña
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: -3216938467154633438, guid: 754f846fc3981e14bbf4824f3ad769b9, type: 3}
@@ -6045,6 +6087,7 @@ Tilemap:
     m_Data: {fileID: 7509860518518112746, guid: dd802aed9fcc1ef449ba3be46cc8cbc1, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -9051692800306759852, guid: 5a2436d41f999894596b17ef3470910d, type: 3}
+<<<<<<< HEAD
   - m_RefCount: 1
     m_Data: {fileID: 1561481054113829923, guid: f7fe9fd58995a9548bcf25d14fa36c6a, type: 3}
   - m_RefCount: 2
@@ -6247,6 +6290,10 @@ Tilemap:
     m_Data: {fileID: -3270787408547215369, guid: 964acf75dde187b40b74690d45c29e32, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 444
+=======
+  m_TileMatrixArray:
+  - m_RefCount: 341
+>>>>>>> Samuel-Urueña
     m_Data:
       e00: 1
       e01: 0
@@ -6265,13 +6312,22 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
+<<<<<<< HEAD
   - m_RefCount: 444
+=======
+  - m_RefCount: 341
+>>>>>>> Samuel-Urueña
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< HEAD
   m_Origin: {x: -5, y: -19, z: 0}
   m_Size: {x: 36, y: 19, z: 1}
+=======
+  m_Origin: {x: -1, y: -19, z: 0}
+  m_Size: {x: 18, y: 19, z: 1}
+>>>>>>> Samuel-Urueña
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -6392,7 +6448,11 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+<<<<<<< HEAD
 --- !u!114 &5178554275397387845
+=======
+--- !u!114 &2329769671661366836
+>>>>>>> Samuel-Urueña
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

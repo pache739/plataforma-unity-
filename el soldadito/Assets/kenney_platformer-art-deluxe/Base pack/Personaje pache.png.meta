@@ -1,0 +1,1690 @@
+fileFormatVersion: 2
+guid: f101302b733d64148b353c9d082c2806
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1337817794221194661
+    second: Personaje pache_0
+  - first:
+      213: 3423531072196078922
+    second: Personaje pache_1
+  - first:
+      213: 9000170010212781595
+    second: Personaje pache_2
+  - first:
+      213: -3528836336002675492
+    second: Personaje pache_3
+  - first:
+      213: 7400983597655185590
+    second: Personaje pache_4
+  - first:
+      213: 4612806694137878892
+    second: Personaje pache_5
+  - first:
+      213: 6897535003294974639
+    second: Personaje pache_6
+  - first:
+      213: -8003058454683009927
+    second: Personaje pache_7
+  - first:
+      213: 2625928143069939966
+    second: Personaje pache_8
+  - first:
+      213: -2312968908065242069
+    second: Personaje pache_9
+  - first:
+      213: 4646130844018448305
+    second: Personaje pache_10
+  - first:
+      213: -564720694689521479
+    second: Personaje pache_11
+  - first:
+      213: 8981982984389723227
+    second: Personaje pache_12
+  - first:
+      213: 9176783205741813141
+    second: Personaje pache_13
+  - first:
+      213: 6219955101103059035
+    second: Personaje pache_14
+  - first:
+      213: -8611414532652097900
+    second: Personaje pache_15
+  - first:
+      213: 781718101488478897
+    second: Personaje pache_16
+  - first:
+      213: -2683120546683250473
+    second: Personaje pache_17
+  - first:
+      213: 4082602083932419768
+    second: Personaje pache_18
+  - first:
+      213: 9151828463333628821
+    second: Personaje pache_19
+  - first:
+      213: -4575579840089229783
+    second: Personaje pache_20
+  - first:
+      213: -4276335567089483321
+    second: Personaje pache_21
+  - first:
+      213: -5355175106985625481
+    second: Personaje pache_22
+  - first:
+      213: 1824543579638147351
+    second: Personaje pache_23
+  - first:
+      213: -1096711292852806946
+    second: Personaje pache_24
+  - first:
+      213: 3526763457040585129
+    second: Personaje pache_25
+  - first:
+      213: -6988404800404968277
+    second: Personaje pache_26
+  - first:
+      213: -5122953795178191589
+    second: Personaje pache_27
+  - first:
+      213: 7620218400306622013
+    second: Personaje pache_28
+  - first:
+      213: -3708113757786665273
+    second: Personaje pache_29
+  - first:
+      213: 6750715616685763027
+    second: Personaje pache_30
+  - first:
+      213: -8353819167369417086
+    second: Personaje pache_31
+  - first:
+      213: 3153566323082817161
+    second: Personaje pache_32
+  - first:
+      213: 3633328888003747039
+    second: Personaje pache_33
+  - first:
+      213: 4881193770033937074
+    second: Personaje pache_34
+  - first:
+      213: -1756380376829958280
+    second: Personaje pache_35
+  - first:
+      213: 5031732414705011724
+    second: Personaje pache_36
+  - first:
+      213: 628148422296955391
+    second: Personaje pache_37
+  - first:
+      213: 4425739049627384502
+    second: Personaje pache_38
+  - first:
+      213: -277370715590773647
+    second: Personaje pache_39
+  - first:
+      213: 7206070389278489590
+    second: Personaje pache_40
+  - first:
+      213: -1341239867391448621
+    second: Personaje pache_41
+  - first:
+      213: -3345109012108938599
+    second: Personaje pache_42
+  - first:
+      213: 5819605457544418843
+    second: Personaje pache_43
+  - first:
+      213: 6107349057160995951
+    second: Personaje pache_44
+  - first:
+      213: -2592633819996616418
+    second: Personaje pache_45
+  - first:
+      213: -5800696947334799295
+    second: Personaje pache_46
+  - first:
+      213: -3310378632837011112
+    second: Personaje pache_47
+  - first:
+      213: -4772491668230680686
+    second: Personaje pache_48
+  - first:
+      213: 6944258478179992437
+    second: Personaje pache_49
+  - first:
+      213: -6242717445355378163
+    second: Personaje pache_50
+  - first:
+      213: -6361147610956614410
+    second: Personaje pache_51
+  - first:
+      213: -614727538510972857
+    second: Personaje pache_52
+  - first:
+      213: 1495292037942388694
+    second: Personaje pache_53
+  - first:
+      213: -6783740765495785124
+    second: Personaje pache_54
+  - first:
+      213: -4934351874796505907
+    second: Personaje pache_55
+  - first:
+      213: 121442756957578752
+    second: Personaje pache_56
+  - first:
+      213: 5154005078139695437
+    second: Personaje pache_57
+  - first:
+      213: -1882252947305285
+    second: Personaje pache_58
+  - first:
+      213: -8204045975458843677
+    second: Personaje pache_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Personaje pache_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1209
+        width: 33
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad30ce1232e09210800000000000000
+      internalID: 1337817794221194661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 657
+        width: 252
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d62cb1f53d28f20800000000000000
+      internalID: 3423531072196078922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_2
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1233
+        width: 54
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e4bd870f607ec70800000000000000
+      internalID: 9000170010212781595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_3
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 668
+        width: 375
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdcc11a8c0e070fc0800000000000000
+      internalID: -3528836336002675492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_4
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1245
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8dab6be5395b660800000000000000
+      internalID: 7400983597655185590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_5
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 1181
+        width: 29
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69d1a5af3bf30040800000000000000
+      internalID: 4612806694137878892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_6
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1243
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa248317a87f8bf50800000000000000
+      internalID: 6897535003294974639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_7
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1173
+        width: 102
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97cbeebccbc6fe090800000000000000
+      internalID: -8003058454683009927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_8
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 597
+        width: 363
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef8826dbbbb217420800000000000000
+      internalID: 2625928143069939966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_9
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1197
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b248f32680fa6efd0800000000000000
+      internalID: -2312968908065242069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_10
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1157
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b794b9e26f5a7040800000000000000
+      internalID: 4646130844018448305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_11
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1157
+        width: 63
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b028bb2585b928f0800000000000000
+      internalID: -564720694689521479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_12
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1141
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54072b8fe966ac70800000000000000
+      internalID: 8981982984389723227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_13
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1167
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59dd20774bb7a5f70800000000000000
+      internalID: 9176783205741813141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_14
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1165
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b507020b538b15650800000000000000
+      internalID: 6219955101103059035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_15
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 1087
+        width: 20
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e92a79b1c1e7880800000000000000
+      internalID: -8611414532652097900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_16
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 1159
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1baa6b9b87839da00800000000000000
+      internalID: 781718101488478897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_17
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 1151
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8946d1414a3cad0800000000000000
+      internalID: -2683120546683250473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_18
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 1157
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6bf0cf6f058a830800000000000000
+      internalID: 4082602083932419768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_19
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1119
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b5f4abf73d10f70800000000000000
+      internalID: 9151828463333628821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_20
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1143
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926fa0eb0664080c0800000000000000
+      internalID: -4575579840089229783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_21
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1133
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1434f657767a4c0800000000000000
+      internalID: -4276335567089483321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_22
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1131
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7787b16fc989ea5b0800000000000000
+      internalID: -5355175106985625481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_23
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1119
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7192d8508b4125910800000000000000
+      internalID: 1824543579638147351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_24
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1059
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda5958c3e2b7c0f0800000000000000
+      internalID: -1096711292852806946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_25
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1079
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a19bb7bda491f030800000000000000
+      internalID: 3526763457040585129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 921
+        width: 76
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac2a353cd2340f90800000000000000
+      internalID: -6988404800404968277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_27
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1039
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b152aa57aac97e8b0800000000000000
+      internalID: -5122953795178191589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_28
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1009
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3eeb2de24470c960800000000000000
+      internalID: 7620218400306622013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_29
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1007
+        width: 76
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce03680f222a8cc0800000000000000
+      internalID: -3708113757786665273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_30
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1033
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9ac38261c5fad50800000000000000
+      internalID: 6750715616685763027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_31
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1033
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ea81b4ab5411c80800000000000000
+      internalID: -8353819167369417086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_32
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 1031
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e6cfeccd7b3cb20800000000000000
+      internalID: 3153566323082817161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_33
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 875
+        width: 66
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdcd0a99f5d2c6230800000000000000
+      internalID: 3633328888003747039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_34
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 889
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2baf8b64fdb7db340800000000000000
+      internalID: 4881193770033937074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_35
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 28
+        width: 448
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877659c5a5510a7e0800000000000000
+      internalID: -1756380376829958280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_36
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 522
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c8f4fc8fd44d540800000000000000
+      internalID: 5031732414705011724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_37
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 28
+        width: 298
+        height: 596
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff96b3979a1a7b800800000000000000
+      internalID: 628148422296955391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_38
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 551
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba7d9197326b6d30800000000000000
+      internalID: 4425739049627384502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_39
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 517
+        width: 57
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174bd12cdc4962cf0800000000000000
+      internalID: -277370715590773647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_40
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 555
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fbb763f6da110460800000000000000
+      internalID: 7206070389278489590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_41
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 559
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d96a816275f26de0800000000000000
+      internalID: -1341239867391448621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_42
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 17
+        width: 331
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992f94e9319c391d0800000000000000
+      internalID: -3345109012108938599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_43
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 529
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b161cdd745463c050800000000000000
+      internalID: 5819605457544418843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_44
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 519
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64e56ffb99a1c450800000000000000
+      internalID: 6107349057160995951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_45
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 517
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19007ee64d150cd0800000000000000
+      internalID: -2592633819996616418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_46
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 433
+        width: 55
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140aa6c1cd8cf7fa0800000000000000
+      internalID: -5800696947334799295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_47
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 508
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 859e4bd2c2c2f02d0800000000000000
+      internalID: -3310378632837011112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_48
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 508
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f499d0d14b4cdb0800000000000000
+      internalID: -4772491668230680686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_49
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 485
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573c96c2b46fe5060800000000000000
+      internalID: 6944258478179992437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_50
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 495
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a657c0f896d59a0800000000000000
+      internalID: -6242717445355378163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_51
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 495
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f43b1d53f9a8b7a0800000000000000
+      internalID: -6361147610956614410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_52
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 379
+        width: 40
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74837698f8c0877f0800000000000000
+      internalID: -614727538510972857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_53
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 431
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7a605af2850c410800000000000000
+      internalID: 1495292037942388694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_54
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 434
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c59894037bf4bd1a0800000000000000
+      internalID: -6783740765495785124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_55
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 421
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc4b8f9fc19a58bb0800000000000000
+      internalID: -4934351874796505907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_56
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 405
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00620054b837fa100800000000000000
+      internalID: 121442756957578752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_57
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 410
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d41731dbf44b68740800000000000000
+      internalID: 5154005078139695437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_58
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 373
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbcc2b5d91059fff0800000000000000
+      internalID: -1882252947305285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje pache_59
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 277
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e37dc7f6af552e80800000000000000
+      internalID: -8204045975458843677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Personaje pache_0: 1337817794221194661
+      Personaje pache_1: 3423531072196078922
+      Personaje pache_10: 4646130844018448305
+      Personaje pache_11: -564720694689521479
+      Personaje pache_12: 8981982984389723227
+      Personaje pache_13: 9176783205741813141
+      Personaje pache_14: 6219955101103059035
+      Personaje pache_15: -8611414532652097900
+      Personaje pache_16: 781718101488478897
+      Personaje pache_17: -2683120546683250473
+      Personaje pache_18: 4082602083932419768
+      Personaje pache_19: 9151828463333628821
+      Personaje pache_2: 9000170010212781595
+      Personaje pache_20: -4575579840089229783
+      Personaje pache_21: -4276335567089483321
+      Personaje pache_22: -5355175106985625481
+      Personaje pache_23: 1824543579638147351
+      Personaje pache_24: -1096711292852806946
+      Personaje pache_25: 3526763457040585129
+      Personaje pache_26: -6988404800404968277
+      Personaje pache_27: -5122953795178191589
+      Personaje pache_28: 7620218400306622013
+      Personaje pache_29: -3708113757786665273
+      Personaje pache_3: -3528836336002675492
+      Personaje pache_30: 6750715616685763027
+      Personaje pache_31: -8353819167369417086
+      Personaje pache_32: 3153566323082817161
+      Personaje pache_33: 3633328888003747039
+      Personaje pache_34: 4881193770033937074
+      Personaje pache_35: -1756380376829958280
+      Personaje pache_36: 5031732414705011724
+      Personaje pache_37: 628148422296955391
+      Personaje pache_38: 4425739049627384502
+      Personaje pache_39: -277370715590773647
+      Personaje pache_4: 7400983597655185590
+      Personaje pache_40: 7206070389278489590
+      Personaje pache_41: -1341239867391448621
+      Personaje pache_42: -3345109012108938599
+      Personaje pache_43: 5819605457544418843
+      Personaje pache_44: 6107349057160995951
+      Personaje pache_45: -2592633819996616418
+      Personaje pache_46: -5800696947334799295
+      Personaje pache_47: -3310378632837011112
+      Personaje pache_48: -4772491668230680686
+      Personaje pache_49: 6944258478179992437
+      Personaje pache_5: 4612806694137878892
+      Personaje pache_50: -6242717445355378163
+      Personaje pache_51: -6361147610956614410
+      Personaje pache_52: -614727538510972857
+      Personaje pache_53: 1495292037942388694
+      Personaje pache_54: -6783740765495785124
+      Personaje pache_55: -4934351874796505907
+      Personaje pache_56: 121442756957578752
+      Personaje pache_57: 5154005078139695437
+      Personaje pache_58: -1882252947305285
+      Personaje pache_59: -8204045975458843677
+      Personaje pache_6: 6897535003294974639
+      Personaje pache_7: -8003058454683009927
+      Personaje pache_8: 2625928143069939966
+      Personaje pache_9: -2312968908065242069
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

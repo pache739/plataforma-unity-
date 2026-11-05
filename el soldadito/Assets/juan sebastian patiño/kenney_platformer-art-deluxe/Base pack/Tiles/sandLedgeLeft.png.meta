@@ -134,7 +134,11 @@ TextureImporter:
         width: 5
         height: 18
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> Samuel-Urueña
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -151,7 +155,11 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 24e679b6f08d1da4eb1190327db6c46b
+=======
+    spriteID: 
+>>>>>>> Samuel-Urueña
     internalID: 0
     vertices: []
     indices: 
