@@ -24,7 +24,7 @@ public class PinchosQuitaVida : MonoBehaviour
             return;
         }
 
-        PlayerStats stats = colision.GetComponentInParent<PlayerStats>();
+        PlayerStatspache stats = colision.GetComponentInParent<PlayerStatspache>();
 
         if (stats == null)
         {

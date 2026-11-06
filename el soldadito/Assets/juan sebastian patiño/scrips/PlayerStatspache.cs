@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerStats : MonoBehaviour
+public class PlayerStatspache : MonoBehaviour
 {
     [SerializeField] private int _vidaMaxima = 100;
     [SerializeField] private int _vidaActual;

@@ -10,7 +10,7 @@ public class DetectorSuelo : MonoBehaviour
 
         if (collision.CompareTag("Suelo"))
         {
-            estaEnSuelo = true;
+            estaenSuelo = true;
             Debug.Log("ESTOY EN EL SUELO");
         }
     }
@@ -19,7 +19,7 @@ public class DetectorSuelo : MonoBehaviour
     {
         if (collision.CompareTag("Suelo"))
         {
-            estaEnSuelo = false;
+            estaenSuelo = false;
         }
     }
 }

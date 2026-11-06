@@ -1,11 +1,12 @@
+
 using UnityEngine;
 
-public class Moneda : MonoBehaviour
+public class Monedapache : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D colision)
     {
-
-        InventarioMonedas inventario = colision.GetComponentInParent<InventarioMonedas>();
+        Inventariomonedas inventario =
+            colision.GetComponentInParent<Inventariomonedas>();
 
         if (inventario == null)
         {
@@ -13,7 +14,8 @@ public class Moneda : MonoBehaviour
             return;
         }
 
-        inventario.SumarMoneda();
+        inventario.Sumarmoneda();
+
         Destroy(gameObject);
     }
 }

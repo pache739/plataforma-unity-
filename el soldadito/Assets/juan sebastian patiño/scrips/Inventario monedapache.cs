@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class InventarioMonedas : MonoBehaviour
+public class Inventariomonedas : MonoBehaviour
 {
     [SerializeField] private int _monedas;
     [SerializeField] private UIManager _uiManager;
@@ -12,7 +12,7 @@ public class InventarioMonedas : MonoBehaviour
         _uiManager.ActualizarMonedas(_monedas); // muestra X0 al empezar
     }
 
-    public void SumarMoneda()
+    public void Sumarmoneda()
     {
         _monedas++;
         Debug.Log("Monedas: " + _monedas);

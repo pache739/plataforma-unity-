@@ -1,12 +1,13 @@
 using UnityEngine;
 
-public class PowerUpCuracion : MonoBehaviour
+public class powerUpCuracion : MonoBehaviour
 {
     [SerializeField] private int _cura = 20;
 
     private void OnTriggerEnter2D(Collider2D colision)
     {
-        PlayerStats stats = colision.GetComponentInParent<PlayerStats>();
+        playerStats stats =
+            colision.GetComponentInParent<playerStats>();
 
         if (stats == null)
         {
@@ -14,7 +15,9 @@ public class PowerUpCuracion : MonoBehaviour
         }
 
         Debug.Log("Four Loko recogida");
+
         stats.SumarVida(_cura);
+
         Destroy(gameObject);
     }
 }

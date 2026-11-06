@@ -2,14 +2,15 @@ using UnityEngine;
 
 public class Puerta : MonoBehaviour
 {
-    [SerializeField] private int _monedasNecesarias = 2;
-    [SerializeField] private GameObject _panelVictoria;
+    [SerializeField] private int _monedasnecesarias = 2;
+    [SerializeField] private GameObject _PanelVictoria;
 
     private void OnTriggerEnter2D(Collider2D colision)
     {
         Debug.Log("Algo tocó la puerta: " + colision.name);
 
-        InventarioMonedas inventario = colision.GetComponentInParent<InventarioMonedas>();
+        InventarioMonedasuru inventario =
+            colision.GetComponentInParent<InventarioMonedasuru>();
 
         if (inventario == null)
         {
@@ -17,21 +18,27 @@ public class Puerta : MonoBehaviour
             return;
         }
 
-        if (inventario.Monedas < _monedasNecesarias)
+        if (inventario.Monedas < _monedasnecesarias)
         {
-            Debug.Log("Te faltan " + (_monedasNecesarias - inventario.Monedas) + " monedas");
+            Debug.Log(
+                "Te faltan " +
+                (_monedasnecesarias - inventario.Monedas) +
+                " monedas"
+            );
+
             return;
         }
 
         Debug.Log("¡Ganaste!");
 
-        if (_panelVictoria == null)
+        if (_PanelVictoria == null)
         {
             Debug.Log("El campo Panel Victoria está vacío");
             return;
         }
 
-        _panelVictoria.SetActive(true);
+        _PanelVictoria.SetActive(true);
+
         Time.timeScale = 0f;
     }
 }

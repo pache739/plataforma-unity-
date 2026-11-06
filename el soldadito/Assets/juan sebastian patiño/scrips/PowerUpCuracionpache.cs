@@ -9,7 +9,7 @@ public class PowerUpCuracion : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D colision)
     {
-        PlayerStats stats = colision.GetComponentInParent<PlayerStats>();
+        PlayerStatspache stats = colision.GetComponentInParent<PlayerStatspache>();
 
         if (stats == null)
         {

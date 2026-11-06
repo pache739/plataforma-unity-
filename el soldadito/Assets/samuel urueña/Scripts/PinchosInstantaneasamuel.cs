@@ -1,14 +1,23 @@
 using UnityEngine;
 
-public class PinchosInstantanea : MonoBehaviour
+public class pinchosInstantanea : MonoBehaviour
 {
     private Transform _soldado;
     private Vector3 _posicionInicial;
 
     private void Start()
     {
-        MovimientoJugador jugador = FindFirstObjectByType<MovimientoJugador>();
+        MovimientoJugador jugador =
+            FindFirstObjectByType<MovimientoJugador>();
+
+        if (jugador == null)
+        {
+            Debug.LogError("No se encontró al jugador");
+            return;
+        }
+
         _soldado = jugador.transform;
+
         _posicionInicial = _soldado.position;
     }
 
@@ -29,7 +38,19 @@ public class PinchosInstantanea : MonoBehaviour
             return;
         }
 
+        if (_soldado == null)
+        {
+            return;
+        }
+
         _soldado.position = _posicionInicial;
-        _soldado.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+
+        Rigidbody2D cuerpo =
+            _soldado.GetComponent<Rigidbody2D>();
+
+        if (cuerpo != null)
+        {
+            cuerpo.linearVelocity = Vector2.zero;
+        }
     }
 }

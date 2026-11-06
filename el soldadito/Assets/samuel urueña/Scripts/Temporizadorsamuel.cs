@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using System;
 
-public class Temporizador : MonoBehaviour
+public class temporizador : MonoBehaviour
 {
     [SerializeField] private float _tiempoTotal = 60f;
     [SerializeField] private bool _repetir = true;
@@ -16,9 +17,12 @@ public class Temporizador : MonoBehaviour
     private void Start()
     {
         _cuadros = Resources.LoadAll<Sprite>("Dinamita");
-        System.Array.Sort(_cuadros, (a, b) => string.Compare(a.name, b.name));
+
+        Array.Sort(_cuadros, (a, b) =>
+            string.Compare(a.name, b.name, StringComparison.Ordinal));
 
         _tiempoRestante = _tiempoTotal;
+
         ActualizarImagen();
     }
 
@@ -34,7 +38,11 @@ public class Temporizador : MonoBehaviour
         if (_tiempoRestante <= 0f)
         {
             Debug.Log("Se acabó el tiempo");
-            _alTerminar.Invoke();
+
+            if (_alTerminar != null)
+            {
+                _alTerminar.Invoke();
+            }
 
             if (_repetir)
             {
@@ -52,14 +60,26 @@ public class Temporizador : MonoBehaviour
 
     private void ActualizarImagen()
     {
-        if (_imagenReloj == null || _cuadros.Length == 0)
+        if (_imagenReloj == null ||
+            _cuadros == null ||
+            _cuadros.Length == 0)
+        {
+            return;
+        }
+
+        if (_tiempoTotal <= 0f)
         {
             return;
         }
 
         float transcurrido = _tiempoTotal - _tiempoRestante;
-        int indice = Mathf.FloorToInt(transcurrido / _tiempoTotal * _cuadros.Length);
+
+        int indice = Mathf.FloorToInt(
+            transcurrido / _tiempoTotal * _cuadros.Length
+        );
+
         indice = Mathf.Clamp(indice, 0, _cuadros.Length - 1);
+
         _imagenReloj.sprite = _cuadros[indice];
     }
 }

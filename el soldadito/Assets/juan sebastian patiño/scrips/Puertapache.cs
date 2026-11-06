@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections;
 
-public class Puerta : MonoBehaviour
+public class Puertapache : MonoBehaviour
 {
     [SerializeField] private int _monedasNecesarias = 1;
     [SerializeField] private TilemapCollider2D _colisionPuerta;
@@ -23,8 +23,8 @@ public class Puerta : MonoBehaviour
     {
         if (_puertaAbierta) return;
 
-        InventarioMonedas inventario =
-            colision.collider.GetComponentInParent<InventarioMonedas>();
+        Inventariomonedas inventario =
+            colision.collider.GetComponentInParent<Inventariomonedas>();
 
         if (inventario == null) return;
 
@@ -44,8 +44,8 @@ public class Puerta : MonoBehaviour
     {
         if (!_puertaAbierta || _victoriaActivada) return;
 
-        InventarioMonedas inventario =
-            colision.GetComponentInParent<InventarioMonedas>();
+        Inventariomonedas inventario =
+            colision.GetComponentInParent<Inventariomonedas>();
 
         if (inventario == null) return;
 

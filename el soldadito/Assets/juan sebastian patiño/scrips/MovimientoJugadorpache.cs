@@ -43,7 +43,7 @@ public class MovimientoJugador : MonoBehaviour
         {
 
 
-            if (_detectorSuelo.estaEnSuelo)
+            if (_detectorSuelo.estaenSuelo)
                 _saltar = true;
         }
     }

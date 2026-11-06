@@ -1,12 +1,13 @@
 using UnityEngine;
 
-public class PowerUpEscudo : MonoBehaviour
+public class powerUpescudo : MonoBehaviour
 {
     [SerializeField] private int _cantidad = 25;
 
     private void OnTriggerEnter2D(Collider2D colision)
     {
-        PlayerStats stats = colision.GetComponentInParent<PlayerStats>();
+        playerStats stats =
+            colision.GetComponentInParent<playerStats>();
 
         if (stats == null)
         {
@@ -14,6 +15,7 @@ public class PowerUpEscudo : MonoBehaviour
         }
 
         stats.RestaurarEscudo(_cantidad);
+
         Destroy(gameObject);
     }
 }

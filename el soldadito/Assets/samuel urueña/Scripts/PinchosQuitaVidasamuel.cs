@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PinchosQuitaVida : MonoBehaviour
+public class pinchosQuitaVida : MonoBehaviour
 {
     [SerializeField] private int _daño = 10;
     [SerializeField] private float _tiempoEntreGolpes = 1f;
@@ -24,7 +24,8 @@ public class PinchosQuitaVida : MonoBehaviour
             return;
         }
 
-        PlayerStats stats = colision.GetComponentInParent<PlayerStats>();
+        playerStats stats =
+            colision.GetComponentInParent<playerStats>();
 
         if (stats == null)
         {
@@ -32,6 +33,7 @@ public class PinchosQuitaVida : MonoBehaviour
         }
 
         _ultimoGolpe = Time.time;
-        stats.RestarVida(_daño);
+
+        stats.restarVida(_daño);
     }
 }
